@@ -12,12 +12,9 @@ pub fn verse(n: u32) -> String {
 }
 
 pub fn sing(start: u32, end: u32) -> String {
-    let mut result = String::new();
-
-    for i in end..=start {
-        let prepend_str = verse(i) + if i == end { "" } else { "\n" };
-        result.insert_str(0, prepend_str.as_str());
-    }
-
-    result
+    (end..=start)
+        .map(verse)
+        .rev()
+        .collect::<Vec<String>>()
+        .join("\n")
 }
