@@ -22,11 +22,7 @@ fn is_anagram(word: &str, anagram: &str) -> bool {
     let word = get_sorted_vec_chars(word);
     let anagram = get_sorted_vec_chars(anagram);
 
-    if word != anagram {
-        return false;
-    }
-
-    true
+    word == anagram
 }
 
 // fn str_bytes_sum(word: &str) -> u8 {
