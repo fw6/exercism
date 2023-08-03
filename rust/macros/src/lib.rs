@@ -15,3 +15,6 @@ macro_rules! hashmap {
         }
     };
 }
+
+// https://dietcode.io/t/tt-munchers/
+// https://stackoverflow.com/questions/34304593/counting-length-of-repetition-in-macro
