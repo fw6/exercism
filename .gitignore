@@ -1,0 +1,5 @@
+# rust track specific
+**/rust/**/*.rs.bk
+**/rust/**/Cargo.lock
+**/rust/**/target/
+**/rust/**/.gitignore/
